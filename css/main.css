@@ -13,6 +13,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-family: Montserrat;
 }
 
 body {
@@ -756,14 +757,14 @@ a {
 }
 
 .footer {
-  background: rgba(54, 56, 92, 1);
+  background: rgba(24, 60, 6, 1);
 }
 .footer-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px 37.5px 32px;
+  padding: 40px 22px 32px;
   gap: 32px;
 }
 .footer-wrapper {
@@ -774,19 +775,21 @@ a {
   text-align: center;
 }
 .footer-text {
-  font-family: Poppins;
-  font-size: 16px;
+  font-family: Montserrat;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 30px;
   letter-spacing: 0.01em;
-  color: rgba(98, 132, 209, 1);
+  text-align: left;
+
+  color: rgba(255, 255, 255, 1);
   text-align: center;
 
-  row-gap: 8px;
+  /* row-gap: 8px; */
 }
 .footer-texts {
-  padding: 0 8px;
-  color: rgba(98, 132, 209, 1);
+  padding: 0 4px;
+  color: rgba(255, 255, 255, 1);
   font-family: Poppins;
   font-size: 14px;
   font-weight: 400;
@@ -795,19 +798,19 @@ a {
   text-align: left;
 }
 .footer-copyright {
-  font-family: Poppins;
   color: rgba(255, 255, 255, 1);
-  font-family: Poppins;
+  font-family: Montserrat;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  letter-spacing: 0.01em;
   text-align: center;
 }
 
 @media screen and (min-width: 1200px) {
   .footer-container {
-    display: flex;
-    flex-direction: row;
+    display: block;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 80px 37.5px 40px;
@@ -816,23 +819,25 @@ a {
   .footer-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: end;
+    align-items: end;
+    align-items: end;
+    margin-bottom: 20px;
   }
   .footer-copyright {
-    font-family: Poppins;
+    font-family: Montserrat;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.01em;
-    text-align: left;
-    margin-left: 550px;
+    text-align: center;
+    /* margin-left: 550px; */
   }
   .footer-text {
-    font-family: Inter;
-    font-size: 16px;
+    font-family: Montserrat;
+    font-size: 20px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 30px;
     letter-spacing: 0.01em;
     text-align: left;
   }
@@ -848,40 +853,45 @@ a {
   flex-direction: column;
   align-items: start;
   padding: 107px 16px 76px;
-  background: linear-gradient(180deg, #bfdcfa 0%, #f2f2fe 50%, #bfdcfa 100%);
+  background: linear-gradient(180deg, #f6eec2 0%, #faf4ec 50%, #f6eec2 100%);
+}
+.policy-terms-title {
+  font-family: ADLaM Display;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 44px;
+  text-align: center;
+  color: rgba(102, 51, 0, 1);
+  margin: auto;
+  margin-bottom: 30px;
 }
 
-.policy-terms-title-image {
-  margin: auto;
-  margin-bottom: 20px;
-  width: 342px;
-}
-.policy-title-image {
-  margin: auto;
-  margin-bottom: 20px;
-  width: 255px;
-}
 .policy-terms-text-top-one {
-  font-family: Quicksand;
+  font-family: Poppins;
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.01em;
   text-align: left;
-  padding-bottom: 16px;
+  color: rgba(36, 37, 36, 1);
+
+  margin-bottom: 10px;
 }
 .policy-terms-text-top-two {
+  font-family: Poppins;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 30px;
   letter-spacing: 0.01em;
   text-align: left;
+  color: rgba(21, 35, 44, 1);
 }
 .policy-terms-text {
-  font-family: Poppins;
+  font-family: Montserrat;
   font-size: 24px;
   font-weight: 600;
   line-height: 36px;
+  letter-spacing: 0.01em;
   text-align: left;
   color: rgba(8, 38, 53, 1);
 
@@ -924,38 +934,41 @@ a {
     padding: 160px 182px;
     align-items: start;
   }
-  .policy-title-image {
+
+  .policy-terms-title {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 96px;
+    letter-spacing: 0.01em;
+    text-align: center;
+
     margin: auto;
-    margin-bottom: 20px;
-    width: 520px;
+    margin-bottom: 30px;
   }
 
-  .policy-terms-title-image {
-    margin: auto;
-    margin-bottom: 20px;
-    width: 342px;
-    width: 695px;
-  }
   .policy-terms-text-top-one {
     padding-bottom: 24px;
-
+    font-family: Poppins;
     font-size: 24px;
     font-weight: 700;
     line-height: 36px;
+    letter-spacing: 0.01em;
+    text-align: left;
   }
   .policy-terms-text-top-two {
-    font-family: Quicksand;
+    font-family: Poppins;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 36px;
     letter-spacing: 0.01em;
     text-align: left;
   }
   .policy-terms-text {
-    font-family: Luckiest Guy;
+    font-family: Montserrat;
     font-size: 32px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 36px;
+    letter-spacing: 0.01em;
     text-align: left;
 
     padding-top: 48px;
@@ -963,13 +976,12 @@ a {
   }
 
   .policy-terms-text-one {
-    font-family: Quicksand;
-    font-size: 18px;
+    font-family: Poppins;
+    font-size: 20px;
     font-weight: 400;
     line-height: 30px;
     letter-spacing: 0.01em;
     text-align: left;
-    color: rgba(21, 35, 44, 1);
   }
 
   .terms-list {
