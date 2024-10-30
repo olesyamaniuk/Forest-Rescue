@@ -707,7 +707,8 @@ a {
     width: 1440px;
   }
   .features-image-desk-button {
-    width: 375px;
+    display: flex;
+    width: 1440px;
 
     margin: 0 auto 0;
     margin-top: -251px;
