@@ -94,18 +94,6 @@ a {
   height: 28.56px;
 }
 
-.section--title {
-  font-family: Luckiest Guy;
-  text-transform: uppercase;
-  margin: auto;
-  width: 302px;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 44px;
-  text-align: center;
-  color: rgba(211, 37, 35, 1);
-  margin: 48px auto 32px;
-}
 @media (min-width: 1200px) {
   .section--title {
     font-weight: 900;
@@ -237,7 +225,7 @@ a {
 .navigation-link:hover,
 .navigation-link:focus,
 .navigation-link:active {
-  color: rgba(98, 132, 209, 1);
+  color: #ffa500;
 }
 
 .header {
@@ -321,7 +309,7 @@ a {
   position: relative;
 }
 .navigation.is-open {
-  background: rgba(54, 56, 92, 1);
+  background: #183c06;
 }
 
 .navigation__list {
@@ -347,7 +335,7 @@ a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   z-index: 999;
-  background: rgba(54, 56, 92, 1);
+  background: #183c06;
 }
 .navigation__list.is-open {
   right: 0;
@@ -374,7 +362,7 @@ a {
   font-weight: 900;
   line-height: 40px;
   text-align: center;
-  color: rgba(98, 132, 209, 1);
+  color: #ffa500;
 }
 
 .header.is-open {
@@ -383,8 +371,7 @@ a {
 
 @media screen and (min-width: 1200px) {
   .header {
-    background-color: rgba(242, 242, 254, 1);
-
+    background-color: transparent;
     padding: 8px 24px 8px 24px;
     gap: 8px;
     border-radius: 999px;
@@ -462,7 +449,6 @@ a {
     max-width: 200px;
     padding: 0%;
     height: 14px;
-    color: rgba(29, 19, 70, 1);
   }
 }
 
@@ -475,9 +461,10 @@ a {
   background-position: center;
 
   height: 780px;
+
   margin: auto;
 
-  background-image: url("/image/home/Section-1-Hero.png");
+  background-image: url("/img/hero/Section-1-Hero\ \(1\).png");
 }
 .home__wrapper {
   position: relative;
@@ -561,12 +548,21 @@ a {
   }
 }
 .play {
-  background: linear-gradient(180deg, #bfdcfa 0%, #f2f2fe 50%, #bfdcfa 100%);
+  background: linear-gradient(180deg, #f6eec2 0%, #faf4ec 50%, #f6eec2 100%);
 }
 .play-image {
   margin: auto;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.play-title {
+  font-family: ADLaM Display;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 44px;
+  text-align: center;
+  color: #663300;
+  margin-bottom: 40px;
 }
 .play__item {
   cursor: pointer;
@@ -583,11 +579,12 @@ a {
   justify-content: center;
   align-items: center;
 }
-.play-image-desk {
-  display: none;
-}
+
 .play__list {
   width: 375px;
+}
+.play-image-desk {
+  display: none;
 }
 
 @media screen and (min-width: 1200px) {
@@ -596,13 +593,13 @@ a {
     margin: auto;
     width: 1440px;
   }
+  .play-title {
+    display: none;
+  }
   .play__container {
     display: none;
   }
   .reviews-title {
-    display: none;
-  }
-  .play-image {
     display: none;
   }
 }
@@ -612,14 +609,15 @@ a {
     margin: auto;
     height: 980px;
 
-    background-image: url("/image/home/Section-1-Hero\ \(1\).png");
+    background-image: url("/img/hero/Section-1-Hero\ \(2\).png");
   }
 
   .home__google-button_link {
     width: 300px;
     height: 86px;
-    margin-top: 1px;
-    margin-left: -780px;
+
+    margin-top: 30px;
+    margin-left: -650px;
   }
 }
 
@@ -628,12 +626,12 @@ a {
   background-size: cover;
   background-position: center;
   padding-block: 60px;
-  background: linear-gradient(180deg, #bfdcfa 0%, #f2f2fe 50%, #bfdcfa 100%);
+  background: linear-gradient(180deg, #f6eec2 0%, #faf4ec 50%, #f6eec2 100%);
 }
 
 .advantages-image {
   width: 375px;
-  height: 1086px;
+  height: 915px;
 
   margin: 0 auto 0;
 }
@@ -647,7 +645,7 @@ a {
     background-size: cover;
     background-position: center;
     padding-block: 60px;
-    background: linear-gradient(180deg, #bfdcfa 0%, #f2f2fe 50%, #bfdcfa 100%);
+    background: linear-gradient(180deg, #f6eec2 0%, #faf4ec 50%, #f6eec2 100%);
   }
   .advantages-title {
     display: none;
@@ -666,7 +664,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background: linear-gradient(180deg, #bfdcfa 0%, #f2f2fe 50%, #bfdcfa 100%);
+  background: linear-gradient(180deg, #f6eec2 0%, #faf4ec 50%, #f6eec2 100%);
 }
 
 .features-image {
@@ -674,7 +672,16 @@ a {
 
   margin: 0 auto 0;
 }
+.features-image-button {
+  width: 375px;
+
+  margin: 0 auto 0;
+  margin-top: -214px;
+}
 .features-image-desk {
+  display: none;
+}
+.features-image-desk-button {
   display: none;
 }
 
@@ -684,7 +691,6 @@ a {
     background-size: cover;
     background-position: center;
     padding-block: 60px;
-    background: linear-gradient(180deg, #bfdcfa 0%, #f2f2fe 50%, #bfdcfa 100%);
   }
   .features-title {
     display: none;
@@ -692,10 +698,19 @@ a {
   .features-image {
     display: none;
   }
+  .features-image-button {
+    display: none;
+  }
   .features-image-desk {
     display: flex;
     margin: auto;
     width: 1440px;
+  }
+  .features-image-desk-button {
+    width: 375px;
+
+    margin: 0 auto 0;
+    margin-top: -251px;
   }
 }
 
@@ -704,19 +719,24 @@ a {
   background-size: cover;
   background-position: center;
   padding-block: 60px;
-  background-color: var(--accent-color);
   padding-top: 110px;
   padding-bottom: 103px;
-  background: linear-gradient(180deg, #bfdcfa 0%, #f2f2fe 50%, #bfdcfa 100%);
+  background: linear-gradient(180deg, #f6eec2 0%, #faf4ec 50%, #f6eec2 100%);
 }
 
 .gallery__image {
-  width: 343px;
-  height: 154px;
+  width: 290px;
+  height: 516px;
 }
 .gallery-title {
+  font-family: ADLaM Display;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 44px;
+  text-align: center;
+  color: #663300;
   margin: auto;
-  width: 159px;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -742,17 +762,20 @@ a {
     gap: 40px;
   }
   .gallery__image {
-    width: 1000px;
-    height: 450px;
-
-    top: 0.12px;
-    left: 1006.91px;
-    gap: 0px;
-    opacity: 0px;
+    width: 324px;
+    height: 576px;
   }
 
   .gallery-button-container {
     margin-top: 59px;
+  }
+  .gallery-title {
+    font-family: ADLaM Display;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 96px;
+    letter-spacing: 0.01em;
+    text-align: center;
   }
 }
 
@@ -784,8 +807,6 @@ a {
 
   color: rgba(255, 255, 255, 1);
   text-align: center;
-
-  /* row-gap: 8px; */
 }
 .footer-texts {
   padding: 0 4px;
@@ -831,7 +852,6 @@ a {
     line-height: 24px;
     letter-spacing: 0.01em;
     text-align: center;
-    /* margin-left: 550px; */
   }
   .footer-text {
     font-family: Montserrat;
