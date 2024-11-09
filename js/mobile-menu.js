@@ -22,6 +22,24 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+const playList = document.querySelector('.play__list');
+const mediaQuery = window.matchMedia('(min-width: 1200px)');
+
+function handleScreenChange(e) {
+  if (e.matches) {
+    playList?.classList.remove('play__list');
+     playList?.classList.add('play__list-desk');
+  } else {
+    playList?.classList.add('play__list');
+    playList?.classList.remove('play__list-desk');
+  }
+}
+
+mediaQuery.addEventListener('change', handleScreenChange);
+handleScreenChange(mediaQuery); 
+
+
+
 
 
 
